@@ -88,7 +88,7 @@ const Home = () => {
           <div className="highlights-content">
             <div className="stats-container">
               <div className="stat-item">
-                <span className="stat-number">50+</span>
+                <span className="stat-number">239+</span>
                 <span className="stat-label">Research Publications</span>
               </div>
               <div className="stat-item">
