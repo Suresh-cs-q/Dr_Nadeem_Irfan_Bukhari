@@ -1,0 +1,591 @@
+/* Academics Page Styles */
+.academics-page {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.academics-hero {
+  padding: 5rem 0;
+  background-color: var(--bg-secondary);
+  position: relative;
+}
+
+.academics-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom right, transparent 49.5%, var(--bg-primary) 50%);
+}
+
+.academics-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.academics-hero h1 {
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+  color: var(--primary-dark);
+}
+
+.page-divider {
+  width: 80px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin: 1rem auto 1.5rem;
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Common Section Styles */
+.education-section,
+.teaching-section,
+.mentorship-section,
+.academic-service-section {
+  padding: 5rem 0;
+}
+
+.education-section {
+  background-color: var(--bg-primary);
+}
+
+.teaching-section {
+  background-color: var(--bg-secondary);
+}
+
+.mentorship-section {
+  background-color: var(--bg-primary);
+}
+
+.academic-service-section {
+  background-color: var(--bg-accent);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-divider {
+  width: 60px;
+  height: 2px;
+  background-color: var(--primary-color);
+  margin: 0.75rem auto 0;
+}
+
+/* Education Timeline */
+.education-timeline {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.education-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 9px;
+  width: 2px;
+  background-color: var(--primary-color);
+  opacity: 0.2;
+}
+
+.timeline-entry {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 2rem;
+}
+
+.timeline-entry:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  top: 8px;
+  left: -2rem;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  border: 4px solid var(--bg-primary);
+  box-shadow: 0 0 0 2px rgba(28, 100, 163, 0.2);
+  z-index: 1;
+}
+
+.timeline-content {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.degree {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary-dark);
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.year {
+  font-size: 1rem;
+  color: var(--primary-color);
+  font-weight: 500;
+  background-color: rgba(28, 100, 163, 0.1);
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.timeline-details {
+  color: var(--text-secondary);
+}
+
+.institution {
+  font-size: 1.05rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+
+.thesis, .research-areas, .grade, .honors {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.thesis:last-child, .research-areas:last-child, .grade:last-child, .honors:last-child {
+  margin-bottom: 0;
+}
+
+.label {
+  font-weight: 600;
+  color: var(--primary-dark);
+  margin-right: 0.5rem;
+}
+
+/* Teaching Section */
+.teaching-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.teaching-philosophy {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  padding: 2rem;
+}
+
+.teaching-philosophy h3 {
+  font-size: 1.4rem;
+  color: var(--primary-dark);
+  margin-bottom: 1.25rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.teaching-philosophy h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.teaching-philosophy p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.course-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.course-card h3 {
+  font-size: 1.25rem;
+  color: var(--primary-dark);
+  margin-bottom: 0.75rem;
+}
+
+.course-level {
+  display: inline-block;
+  background-color: rgba(28, 100, 163, 0.1);
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 1.25rem;
+}
+
+.course-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Mentorship Section */
+.mentorship-intro {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.mentorship-intro p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.supervision-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.supervision-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  padding: 2rem;
+  height: 100%;
+}
+
+.supervision-card h3 {
+  font-size: 1.25rem;
+  color: var(--primary-dark);
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.supervision-card h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.supervision-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.supervision-list li {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.supervision-list li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.student-name {
+  font-weight: 600;
+  color: var(--primary-dark);
+  margin-bottom: 0.5rem;
+}
+
+.research-topic {
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.affiliation {
+  font-style: italic;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+/* Academic Service Section */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  padding: 2rem;
+  height: 100%;
+}
+
+.service-card h3 {
+  font-size: 1.25rem;
+  color: var(--primary-dark);
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.service-card h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.service-list li:last-child {
+  margin-bottom: 0;
+}
+
+.service-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+  .courses-grid,
+  .supervision-grid,
+  .service-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .academics-hero,
+  .education-section,
+  .teaching-section,
+  .mentorship-section,
+  .academic-service-section {
+    padding: 4rem 0;
+  }
+  
+  .academics-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .timeline-header {
+    flex-direction: column;
+  }
+  
+  .year {
+    margin-top: 0.5rem;
+  }
+  
+  .teaching-philosophy {
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .academics-hero,
+  .education-section,
+  .teaching-section,
+  .mentorship-section,
+  .academic-service-section {
+    padding: 3.5rem 0;
+  }
+  
+  .academics-hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-description {
+    font-size: 1.05rem;
+  }
+  
+  .education-timeline {
+    padding-left: 1.5rem;
+  }
+  
+  .timeline-entry {
+    padding-left: 1.5rem;
+  }
+  
+  .timeline-marker {
+    left: -1.5rem;
+  }
+  
+  .timeline-content {
+    padding: 1.5rem;
+  }
+  
+  .degree {
+    font-size: 1.15rem;
+  }
+  
+  .courses-grid,
+  .supervision-grid,
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .academics-hero,
+  .education-section,
+  .teaching-section,
+  .mentorship-section,
+  .academic-service-section {
+    padding: 3rem 0;
+  }
+  
+  .academics-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+  }
+  
+  .page-divider {
+    width: 60px;
+    margin: 0.75rem auto 1.25rem;
+  }
+  
+  .education-timeline::before {
+    left: 8px;
+  }
+  
+  .timeline-marker {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .timeline-content {
+    padding: 1.25rem;
+  }
+  
+  .teaching-philosophy h3,
+  .supervision-card h3,
+  .service-card h3,
+  .course-card h3 {
+    font-size: 1.15rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.timeline-entry,
+.teaching-philosophy,
+.course-card,
+.supervision-card,
+.service-card {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.timeline-entry:nth-child(2),
+.course-card:nth-child(2),
+.supervision-card:nth-child(2),
+.service-card:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.timeline-entry:nth-child(3),
+.course-card:nth-child(3),
+.service-card:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .timeline-entry,
+  .teaching-philosophy,
+  .course-card,
+  .supervision-card,
+  .service-card {
+    animation: none;
+  }
+  
+  .timeline-content:hover,
+  .course-card:hover {
+    transform: none;
+  }
+} 

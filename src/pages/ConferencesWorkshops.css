@@ -1,0 +1,647 @@
+.conferences-workshops {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Page Header */
+.conferences-workshops .page-header {
+  background-color: var(--bg-secondary);
+  padding: 5rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.conferences-workshops .page-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom right, transparent 49.5%, var(--bg-primary) 50%);
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  color: var(--primary-dark);
+  margin-bottom: 0.5rem;
+}
+
+.page-header .section-divider {
+  width: 80px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin: 1rem auto 1.5rem;
+}
+
+.page-header p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Events Section */
+.events-section {
+  padding: 5rem 0;
+  background-color: var(--bg-primary);
+}
+
+/* Section Headers */
+.section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-header h2 {
+  color: var(--primary-dark);
+  margin-bottom: 0.75rem;
+}
+
+.section-header .section-divider {
+  width: 60px;
+  height: 2px;
+  background-color: var(--primary-color);
+  margin: 0.75rem auto 0;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid var(--border-color);
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  padding: 1rem 1.5rem;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.tab-btn:hover {
+  color: var(--primary-color);
+}
+
+.tab-btn.active {
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+}
+
+.tab-content {
+  margin-top: 2rem;
+  animation: fadeIn 0.5s ease;
+}
+
+/* Filter Container */
+.filter-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.event-filter {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  background-color: #fff;
+  transition: var(--transition);
+}
+
+.event-filter:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+/* Keynote Section */
+.event-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.event-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.event-title {
+  font-size: 1.6rem;
+  color: var(--primary-dark);
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.event-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.event-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
+}
+
+.event-date, .event-location, .event-role {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.event-meta svg {
+  color: var(--primary-color);
+}
+
+.event-description {
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.event-highlights h4 {
+  font-size: 1.1rem;
+  color: var(--primary-dark);
+  margin-bottom: 0.5rem;
+}
+
+.event-highlights ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: var(--text-secondary);
+}
+
+.event-highlights li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Presentations Section */
+.presentation-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.presentation-year {
+  margin-bottom: 2.5rem;
+}
+
+.year-header h2 {
+  font-size: 1.8rem;
+  color: var(--primary-dark);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.year-presentations {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.presentation-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--border-color);
+  height: 100%;
+}
+
+.presentation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.presentation-type-badge {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.presentation-card h3 {
+  font-size: 1.3rem;
+  color: var(--primary-dark);
+  margin-bottom: 1rem;
+  margin-right: 50px; /* Space for badge */
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.presentation-card h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.presentation-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Awards Section */
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.award-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--border-color);
+  height: 100%;
+}
+
+.award-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.award-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.award-icon {
+  font-size: 2rem;
+  color: #FFD700; /* Gold color for award icon */
+}
+
+.award-header h3 {
+  font-size: 1.5rem;
+  color: var(--primary-dark);
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.award-header h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.award-event {
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.award-work {
+  font-style: italic;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.award-description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Workshops Section */
+.workshop-timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.workshop-item {
+  height: 100%;
+}
+
+.workshop-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--border-color);
+  height: 100%;
+}
+
+.workshop-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.workshop-card h3 {
+  font-size: 1.4rem;
+  color: var(--primary-dark);
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.workshop-card h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.workshop-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+
+.workshop-date, .workshop-location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.workshop-meta svg {
+  color: var(--primary-color);
+}
+
+.workshop-organizer {
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.workshop-description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 992px) {
+  .conferences-workshops .page-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .events-section {
+    padding: 4rem 0;
+  }
+  
+  .tabs {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .tab-btn {
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+  }
+  
+  .year-presentations {
+    grid-template-columns: 1fr;
+  }
+  
+  .awards-grid, 
+  .workshop-timeline {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .conferences-workshops .page-header {
+    padding: 3.5rem 0;
+  }
+  
+  .conferences-workshops .page-header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .conferences-workshops .page-header p {
+    font-size: 1rem;
+  }
+  
+  .events-section {
+    padding: 3.5rem 0;
+  }
+  
+  .event-card {
+    padding: 1.5rem;
+  }
+  
+  .event-title {
+    font-size: 1.4rem;
+  }
+  
+  .event-meta {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .filter-container {
+    justify-content: flex-start;
+  }
+  
+  .presentation-card {
+    padding: 1.2rem;
+  }
+  
+  .presentation-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .awards-grid, 
+  .workshop-timeline {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .conferences-workshops .page-header h1 {
+    font-size: 2rem;
+  }
+  
+  .conferences-workshops .page-header .section-divider {
+    width: 60px;
+    height: 2px;
+    margin: 0.75rem auto 1rem;
+  }
+  
+  .tab-btn {
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .event-title, 
+  .presentation-card h3,
+  .workshop-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .award-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .workshop-meta {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
+
+/* Animation delays for staggered appearance */
+.timeline-item:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.timeline-item:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.timeline-item:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.presentation-year:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.presentation-year:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.presentation-year:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.award-card:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.award-card:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.workshop-item:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.workshop-item:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.workshop-item:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .event-card:hover,
+  .presentation-card:hover,
+  .award-card:hover,
+  .workshop-card:hover {
+    transform: none;
+  }
+  
+  .tab-content {
+    animation: none;
+  }
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 5rem 0;
+  background-color: var(--bg-accent);
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  margin-bottom: 1rem;
+  color: var(--primary-dark);
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: var(--text-secondary);
+}
+
+@media screen and (max-width: 768px) {
+  .cta-section {
+    padding: 4rem 0;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .cta-content p {
+    font-size: 1rem;
+  }
+} 

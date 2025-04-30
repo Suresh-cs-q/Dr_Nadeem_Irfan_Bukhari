@@ -1,0 +1,629 @@
+.contact-page {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Page Header */
+.contact-page .page-header {
+  background-color: var(--bg-secondary);
+  padding: 5rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.contact-page .page-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom right, transparent 49.5%, var(--bg-primary) 50%);
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  color: var(--primary-dark);
+  margin-bottom: 0.5rem;
+}
+
+.page-header .section-divider {
+  width: 80px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin: 1rem auto 1.5rem;
+}
+
+.page-header p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Section Styles */
+.contact-section,
+.office-hours-section,
+.faq-section {
+  padding: 5rem 0;
+}
+
+.contact-section {
+  background-color: var(--bg-primary);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  color: var(--primary-dark);
+  margin-bottom: 0.75rem;
+}
+
+.section-header .section-divider {
+  width: 60px;
+  height: 2px;
+  background-color: var(--primary-color);
+  margin: 0.75rem auto 0;
+}
+
+/* Contact Container */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+/* Contact Info */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+}
+
+.info-card h3 {
+  font-size: 1.4rem;
+  color: var(--primary-dark);
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.info-card h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.info-description {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.info-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.info-item {
+  display: flex;
+  gap: 1rem;
+}
+
+.info-icon {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  min-width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-content {
+  flex: 1;
+}
+
+.info-content h4 {
+  font-size: 1.1rem;
+  color: var(--primary-dark);
+  margin-bottom: 0.5rem;
+}
+
+.info-content a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.info-content a:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+.location-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.location {
+  line-height: 1.6;
+}
+
+.location strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.location p {
+  margin-bottom: 0.25rem;
+  color: var(--text-secondary);
+}
+
+/* Professional Profiles */
+.profile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.profile-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background-color: var(--bg-secondary);
+  border-radius: 4px;
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.profile-link:hover {
+  background-color: var(--bg-accent);
+  transform: translateY(-2px);
+}
+
+.link-icon {
+  font-size: 0.8rem;
+  color: var(--primary-color);
+}
+
+/* Academic Affiliations */
+.affiliations {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.affiliation-group h4 {
+  font-size: 1.1rem;
+  color: var(--primary-dark);
+  margin-bottom: 0.75rem;
+}
+
+.affiliation-list {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  color: var(--text-secondary);
+}
+
+.affiliation-list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Contact Form */
+.contact-form-wrapper {
+  width: 100%;
+}
+
+.form-card {
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+}
+
+.form-card h3 {
+  font-size: 1.4rem;
+  color: var(--primary-dark);
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.form-card h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.form-description {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.form-success-message {
+  background-color: rgba(0, 200, 83, 0.1);
+  color: #00a864;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.required {
+  color: #e53935;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 1rem;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  font-family: var(--font-main);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(28, 100, 163, 0.1);
+}
+
+.input-error {
+  border-color: #e53935 !important;
+}
+
+.error-message {
+  color: #e53935;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+.submit-btn {
+  margin-top: 1rem;
+  align-self: flex-start;
+}
+
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Office Hours Section */
+.office-hours-section {
+  background-color: var(--bg-secondary);
+  position: relative;
+}
+
+.office-hours-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom right, transparent 49.5%, var(--bg-primary) 50%);
+}
+
+.office-hours-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.hours-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hours-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.hours-card h3 {
+  font-size: 1.3rem;
+  color: var(--primary-dark);
+  margin-bottom: 1.25rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.hours-card h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.hours-list {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.hours-list li {
+  margin-bottom: 0.75rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.appointment-note {
+  font-style: italic;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* FAQ Section */
+.faq-section {
+  background-color: var(--bg-primary);
+}
+
+.faq-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 2rem;
+}
+
+.faq-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.faq-card h3 {
+  font-size: 1.3rem;
+  color: var(--primary-dark);
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.faq-card h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.faq-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 992px) {
+  .contact-page .page-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .contact-section,
+  .office-hours-section,
+  .faq-section {
+    padding: 4rem 0;
+  }
+  
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .contact-info {
+    order: 2;
+  }
+  
+  .contact-form-wrapper {
+    order: 1;
+  }
+  
+  .faq-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-page .page-header {
+    padding: 3.5rem 0;
+  }
+  
+  .contact-page .page-header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .contact-page .page-header p {
+    font-size: 1rem;
+  }
+  
+  .contact-section,
+  .office-hours-section,
+  .faq-section {
+    padding: 3.5rem 0;
+  }
+  
+  .section-header {
+    margin-bottom: 2rem;
+  }
+  
+  .form-card,
+  .info-card {
+    padding: 1.5rem;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .office-hours-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-page .page-header h1 {
+    font-size: 2rem;
+  }
+  
+  .contact-page .page-header .section-divider {
+    width: 60px;
+    height: 2px;
+    margin: 0.75rem auto 1rem;
+  }
+  
+  .contact-section,
+  .office-hours-section,
+  .faq-section {
+    padding: 3rem 0;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .info-card h3,
+  .form-card h3,
+  .hours-card h3,
+  .faq-card h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.info-card,
+.form-card,
+.hours-card,
+.faq-card {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Animation delays */
+.info-card:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.info-card:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.hours-card:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.hours-card:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.faq-card:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.faq-card:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.faq-card:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .info-card,
+  .form-card,
+  .hours-card,
+  .faq-card {
+    animation: none;
+  }
+  
+  .info-card:hover,
+  .hours-card:hover,
+  .faq-card:hover {
+    transform: none;
+  }
+} 

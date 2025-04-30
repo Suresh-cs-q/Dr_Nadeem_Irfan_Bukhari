@@ -1,0 +1,410 @@
+/* Research Page Styles */
+.research-page {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.research-hero {
+  padding: 5rem 0;
+  background-color: var(--bg-secondary);
+  position: relative;
+}
+
+.research-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom right, transparent 49.5%, var(--bg-primary) 50%);
+}
+
+.research-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.research-hero h1 {
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+  color: var(--primary-dark);
+}
+
+.page-divider {
+  width: 80px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin: 1rem auto 1.5rem;
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Research Overview */
+.research-overview {
+  padding: 5rem 0;
+  background-color: var(--bg-primary);
+}
+
+.overview-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-divider {
+  width: 60px;
+  height: 2px;
+  background-color: var(--primary-color);
+  margin: 0.75rem auto 0;
+}
+
+.overview-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+/* Research Areas Section */
+.research-areas-section {
+  padding: 5rem 0;
+  background-color: var(--bg-secondary);
+  position: relative;
+}
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.research-card {
+  background-color: var(--bg-primary);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.research-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.research-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1.25rem;
+  color: var(--primary-dark);
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.research-card h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.research-card-content {
+  flex: 1;
+}
+
+.research-card-content p {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.research-card-content ul {
+  padding-left: 1.2rem;
+  margin-bottom: 0;
+}
+
+.research-card-content li {
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.research-card-content li:last-child {
+  margin-bottom: 0;
+}
+
+/* Research Capabilities */
+.research-capabilities {
+  padding: 5rem 0;
+  background-color: var(--bg-primary);
+}
+
+.capabilities-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.capability-column h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1.25rem;
+  color: var(--primary-dark);
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.capability-column h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.capability-list {
+  padding-left: 1.2rem;
+  margin-bottom: 0;
+}
+
+.capability-list li {
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.capability-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* Research Achievements */
+.research-achievements {
+  padding: 5rem 0;
+  background-color: var(--bg-accent);
+}
+
+.achievements-content {
+  margin-top: 3rem;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.achievement-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.achievement-number {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.achievement-label {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.research-hero-content,
+.overview-content,
+.research-card,
+.capability-column,
+.achievement-item {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.research-card:nth-child(2),
+.capability-column:nth-child(2),
+.achievement-item:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.research-card:nth-child(3),
+.capability-column:nth-child(3),
+.achievement-item:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.research-card:nth-child(4),
+.achievement-item:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.research-card:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.research-card:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+  .research-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .research-hero,
+  .research-overview,
+  .research-areas-section,
+  .research-capabilities,
+  .research-achievements {
+    padding: 4rem 0;
+  }
+  
+  .research-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .research-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .capabilities-wrapper {
+    gap: 2rem;
+  }
+  
+  .achievement-number {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .research-hero,
+  .research-overview,
+  .research-areas-section,
+  .research-capabilities,
+  .research-achievements {
+    padding: 3.5rem 0;
+  }
+  
+  .research-hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-description {
+    font-size: 1.05rem;
+  }
+  
+  .overview-content p {
+    font-size: 1rem;
+  }
+  
+  .research-card {
+    padding: 1.5rem;
+  }
+  
+  .research-card h3,
+  .capability-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .capabilities-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .research-hero,
+  .research-overview,
+  .research-areas-section,
+  .research-capabilities,
+  .research-achievements {
+    padding: 3rem 0;
+  }
+  
+  .research-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+  }
+  
+  .page-divider {
+    width: 60px;
+    margin: 0.75rem auto 1.25rem;
+  }
+  
+  .research-card h3,
+  .capability-column h3 {
+    font-size: 1.15rem;
+  }
+  
+  .achievement-number {
+    font-size: 2.25rem;
+  }
+  
+  .achievement-label {
+    font-size: 0.95rem;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .research-hero-content,
+  .overview-content,
+  .research-card,
+  .capability-column,
+  .achievement-item {
+    animation: none;
+  }
+  
+  .research-card:hover {
+    transform: none;
+  }
+} 
